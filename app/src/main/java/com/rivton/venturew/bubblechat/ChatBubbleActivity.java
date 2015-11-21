@@ -11,6 +11,7 @@ import android.widget.AbsListView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class ChatBubbleActivity extends Activity {
     private static final String TAG = "ChatActivity";
@@ -28,7 +29,7 @@ public class ChatBubbleActivity extends Activity {
         super.onCreate(savedInstanceState);
         Intent i = getIntent();
         setContentView(R.layout.activity_chat);
-
+        Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
         buttonSend = (Button) findViewById(R.id.buttonSend);
 
         listView = (ListView) findViewById(R.id.listView1);
